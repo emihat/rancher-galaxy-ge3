@@ -1,0 +1,34 @@
+.catalog:
+  name: "MiGAP-GalaxyGE"
+  version: "v0.0.1"
+  description: "MiGAP on Galaxy with GridEngine"
+  questions:
+  - variable: "scale"
+    label: "Nodes"
+    description: "Number of nodes"
+    required: true
+    default: 1
+    type: "int"
+  - variable: "UID"
+    label: "uid"
+    description: "uid"
+    required: true
+    default: 10007
+    type: "int"
+  - variable: "USER_NAME"
+    label: "user_name"
+    description: "name"
+    required: true
+    default: ""
+    type: "string"
+  - variable: "PASSWD"
+    label: "passwd"
+    description: "password"
+    required: true
+    default: ""
+    type: "password"
+migap-galaxy:
+  scale: "${scale}"
+  UID: "${UID}"
+  USER_NAME: "${USER_NAME}"
+  PASSWD: "${PASSWD}"
